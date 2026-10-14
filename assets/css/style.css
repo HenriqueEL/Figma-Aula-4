@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Heebo';
+    src: url(../fonte/Heebo-VariableFont_wght.ttf);
+}
+body{
+    font-family: Heebo;
+    background-color: white;
+}
+#cima{
+    display: flex;
+    justify-content:space-evenly;
+}
+.cima1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    h1{
+        font-size: 44px;
+        font-weight: 700;
+    }
+    .txt1{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+.btn1{
+    background-color: #FF6464;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 9px;
+    padding-bottom: 13px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 2px;
+}
+.cima2{
+    width: 243px;
+    height: 243px;
+    justify-self:start;
+}
+.tt{
+    font-size: 22px;
+    font-weight: 400;
+    justify-self: start;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#formacoes{
+    display: flex;
+    flex-direction: column;
+}
+.form1{
+    h1{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .data{
+        align-items: baseline;
+        gap: 22px;
+        font-size: 18px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: row;
+        span{
+            color: black;
+            font-size: 24px;
+            font-weight: 300;
+        }
+    }
+    width: 418px;
+    height: 295px;
+}
+.form2{
+    h1{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .data{
+        align-items: baseline;
+        gap: 22px;
+        font-size: 18px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: row;
+        span{
+            color: black;
+            font-size: 24px;
+            font-weight: 300;
+        }
+    }
+    font-size: 16px;
+    font-weight: 400;
+    width: 418px;
+    height: 295px;
+}
