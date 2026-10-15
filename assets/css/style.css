@@ -6,9 +6,13 @@ body{
     font-family: Heebo;
     background-color: white;
 }
+header{
+    display: none;
+}
 #cima{
     display: flex;
     justify-content:space-evenly;
+    padding-top: 66px;
 }
 .cima1{
     display: flex;
@@ -17,10 +21,12 @@ body{
     h1{
         font-size: 44px;
         font-weight: 700;
+        max-width: 506px;
     }
-    .txt1{
+    p{
         font-size: 16px;
         font-weight: 400;
+        max-width: 497px;
     }
 }
 .btn1{
@@ -43,15 +49,18 @@ body{
     font-size: 22px;
     font-weight: 400;
     justify-self: start;
+    position: relative;
+    left: 100px;
 }
 .cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 #formacoes{
     display: flex;
     flex-direction: column;
+    margin-top: 66px;
 }
 .form1{
     h1{
@@ -70,6 +79,11 @@ body{
             font-size: 24px;
             font-weight: 300;
         }
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 368px;
     }
     width: 418px;
     height: 295px;
@@ -92,8 +106,231 @@ body{
             font-weight: 300;
         }
     }
-    font-size: 16px;
-    font-weight: 400;
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 368px;
+    }
     width: 418px;
     height: 295px;
 }
+#exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 66px;
+    .fw{
+        display: none;
+    }
+}
+.exp1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: last baseline;
+    column-gap: 100px;
+}
+.exp-img1{
+    img{
+        height: 180px;
+        width: 246px;
+        border-radius: 6px;
+    }   
+}
+.exp-txt1{
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10;
+    }
+    p{
+        margin-top: 0;
+        font-size: 16px;
+        max-width: 594px;
+    }
+    position: relative;
+    left: -78px;
+}
+.exp2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: last baseline;
+    column-gap: 100px;
+}
+.exp-img2{
+    img{
+        height: 180px;
+        width: 246px;
+        border-radius: 6px;
+    }   
+}
+.exp-txt2{
+    h1{
+        margin-bottom: 10;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    p{
+        margin-top: 0;
+        font-size: 16px;
+        max-width: 594px;
+    }
+    position: relative;
+    left: -78px;
+}
+.exp-data{
+    display: flex;
+    flex-direction: row;
+    column-gap: 21px;
+    align-items: center;
+    .dat{
+        padding: 2px 8px;
+        background-color: #142850;
+        color: white;
+        border-radius: 16px;
+        font-size: 18px;
+        font-weight: 900;
+    }
+    color: #8695A4;
+    font-size: 20px;
+    font-weight: 400;
+}
+#skills{
+    margin-top: 66px;
+    img{
+        height: 141px;
+        width: 141px;
+        position: relative;
+        left: 112px;
+    }
+    p{
+        max-width: 368px;
+        text-align: center;
+    }
+    h2{
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 400;
+        justify-self: center;
+    }
+}
+.cent-sk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 66px;
+
+    p{
+        display: flex;
+        margin-top: 24px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+.icones{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+@media screen and (max-width:768px) {
+    header{
+        display: block;
+        display: flex;
+        justify-content: end;
+        margin-bottom: 66px;
+        padding-top: 20px;
+    }
+    #cima{
+        display: flex;
+        flex-direction: column-reverse;
+        img{
+            align-self: center;
+        }
+        h1{
+            text-align: center;
+            align-self: center;
+            margin-bottom: 0px ;
+        }
+        p{
+            text-align: center;
+            max-width: 328px;
+            span{
+                display: none;
+            }
+            align-self: center;
+        }
+        .btn1{
+            align-self: center;
+        }
+    }
+    #formacoes{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        .tt{
+            position: static;
+            left: auto;
+            align-self: center;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .cards{
+            flex-direction: column;
+            p{
+                max-width: 314px;
+                margin-top: -7px;
+            }
+        }
+        .form2{
+            margin-top: 26px;
+        }
+    }
+    #exp{
+        display: flex;
+        margin-top: 40px;
+        .tt{
+            display: none;
+            position: static;
+            left: auto;
+        }
+        .fw{
+            display: block;
+            font-size: 18px;
+            align-self: center;
+        }
+        .exp1{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img{
+                height: 230px;
+                width: 339px;
+            }
+            .exp-txt1{
+                display: flex;
+                max-width: 339px;
+                flex-direction:column;
+                position: static;
+                left: auto;
+            }
+        }
+        .exp2{
+            display: none;
+        }
+    }
+    #skills{
+        display: none;
+    }
+    footer{
+        margin-top: 165px;
+    }
+}
+
+
